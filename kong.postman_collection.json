@@ -1,0 +1,265 @@
+{
+  "info": {
+    "_postman_id": "5b1e7f3b-9e9a-4f3d-b1d6-2e9e0c0e0a01",
+    "name": "Kong Gateway Routes",
+    "description": "Requests generated from kong.yaml. Update gateway_base_url if Kong is exposed on a different host or port.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "gateway_base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Local Services",
+      "item": [
+        {
+          "name": "alpha-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/alpha",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "alpha"
+              ]
+            },
+            "description": "Kong route /alpha -> alpha-service at host.docker.internal:3000"
+          }
+        },
+        {
+          "name": "beta-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/beta",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "beta"
+              ]
+            },
+            "description": "Kong route /beta -> beta-service at host.docker.internal:3001"
+          }
+        },
+        {
+          "name": "gamma-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/gamma",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "gamma"
+              ]
+            },
+            "description": "Kong route /gamma -> gamma-service at host.docker.internal:3002"
+          }
+        },
+        {
+          "name": "delta-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/delta",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "delta"
+              ]
+            },
+            "description": "Kong route /delta -> delta-service at host.docker.internal:3003"
+          }
+        },
+        {
+          "name": "epsilon-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/epsilon",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "epsilon"
+              ]
+            },
+            "description": "Kong route /epsilon -> epsilon-service at host.docker.internal:3004"
+          }
+        },
+        {
+          "name": "zeta-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/zeta",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "zeta"
+              ]
+            },
+            "description": "Kong route /zeta -> zeta-service at host.docker.internal:3005"
+          }
+        },
+        {
+          "name": "lota-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/lota",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "lota"
+              ]
+            },
+            "description": "Kong route /lota -> lota-service at host.docker.internal:3006"
+          }
+        },
+        {
+          "name": "theta-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/theta",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "theta"
+              ]
+            },
+            "description": "Kong route /theta -> theta-service at host.docker.internal:3007"
+          }
+        },
+        {
+          "name": "eta-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/eta",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "eta"
+              ]
+            },
+            "description": "Kong route /eta -> eta-service at host.docker.internal:3008"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Public APIs",
+      "item": [
+        {
+          "name": "cat-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/cat",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "cat"
+              ]
+            },
+            "description": "Kong route /cat -> https://catfact.ninja/fact"
+          }
+        },
+        {
+          "name": "dog-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/dog",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "dog"
+              ]
+            },
+            "description": "Kong route /dog -> https://dog.ceo/api/breeds/image/random"
+          }
+        },
+        {
+          "name": "ip-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/ip",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "ip"
+              ]
+            },
+            "description": "Kong route /ip -> https://ipinfo.io/161.185.160.93/geo"
+          }
+        },
+        {
+          "name": "joke-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/joke",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "joke"
+              ]
+            },
+            "description": "Kong route /joke -> https://official-joke-api.appspot.com/random_joke"
+          }
+        },
+        {
+          "name": "randomUser-route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{gateway_base_url}}/user",
+              "host": [
+                "{{gateway_base_url}}"
+              ],
+              "path": [
+                "user"
+              ]
+            },
+            "description": "Kong route /user -> https://randomuser.me/api/"
+          }
+        }
+      ]
+    }
+  ]
+}
