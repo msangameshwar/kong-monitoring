@@ -30,7 +30,7 @@
                 "alpha"
               ]
             },
-            "description": "Kong route /alpha -> alpha-service at host.docker.internal:3000"
+            "description": "Kong route /alpha -> alpha-service at host.docker.internal:3009"
           }
         },
         {
