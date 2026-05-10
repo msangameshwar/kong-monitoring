@@ -34,6 +34,7 @@ services:
     - /alpha
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -58,6 +59,7 @@ services:
     - /beta
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -84,6 +86,7 @@ services:
     preserve_host: false
     protocols:
     - http
+    - https
     regex_priority: 0
     request_buffering: true
     response_buffering: true
@@ -107,6 +110,7 @@ services:
     - /delta
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -133,6 +137,7 @@ services:
     preserve_host: false
     protocols:
     - http
+    - https
     regex_priority: 0
     request_buffering: true
     response_buffering: true
@@ -156,6 +161,7 @@ services:
     - /epsilon
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -180,6 +186,7 @@ services:
     - /eta
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -204,6 +211,7 @@ services:
     - /gamma
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -230,6 +238,7 @@ services:
     preserve_host: false
     protocols:
     - http
+    - https
     regex_priority: 0
     request_buffering: true
     response_buffering: true
@@ -255,6 +264,7 @@ services:
     preserve_host: false
     protocols:
     - http
+    - https
     regex_priority: 0
     request_buffering: true
     response_buffering: true
@@ -278,6 +288,7 @@ services:
     - /lota
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -304,6 +315,7 @@ services:
     preserve_host: false
     protocols:
     - http
+    - https
     regex_priority: 0
     request_buffering: true
     response_buffering: true
@@ -327,6 +339,7 @@ services:
     - /theta
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -351,6 +364,7 @@ services:
     - /zeta
     preserve_host: false
     protocols:
+    - http
     - https
     regex_priority: 0
     request_buffering: true
