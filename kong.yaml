@@ -4,7 +4,7 @@ services:
   enabled: true
   host: host.docker.internal
   name: alpha-service
-  port: 3000
+  port: 3009
   protocol: http
   read_timeout: 60000
   retries: 5
