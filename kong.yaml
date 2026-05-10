@@ -26,13 +26,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: alpha-route
     path_handling: v0
     paths:
     - /alpha
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -49,13 +50,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: beta-route
     path_handling: v0
     paths:
     - /beta
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -97,13 +99,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: delta-route
     path_handling: v0
     paths:
     - /delta
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -145,13 +148,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: epsilon-route
     path_handling: v0
     paths:
     - /epsilon
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -168,13 +172,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: eta-route
     path_handling: v0
     paths:
     - /eta
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -191,13 +196,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: gamma-route
     path_handling: v0
     paths:
     - /gamma
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -264,13 +270,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: lota-route
     path_handling: v0
     paths:
     - /lota
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -312,13 +319,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: theta-route
     path_handling: v0
     paths:
     - /theta
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
@@ -335,13 +343,14 @@ services:
   retries: 5
   routes:
   - https_redirect_status_code: 426
+    methods:
+    - GET
     name: zeta-route
     path_handling: v0
     paths:
     - /zeta
     preserve_host: false
     protocols:
-    - http
     - https
     regex_priority: 0
     request_buffering: true
